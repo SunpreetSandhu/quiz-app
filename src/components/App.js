@@ -1,5 +1,5 @@
 import DateCounter from "./DateCounter";
-import "./index.css";
+import "../index.css";
 import Header from "./Header";
 import Main from "./Main";
 import { useEffect, useReducer } from "react";
