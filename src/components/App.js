@@ -110,9 +110,11 @@ function App() {
     0
   );
   useEffect(function () {
-    fetch("http://localhost:9000/questions")
+    fetch("https://sunpreetsandhu.github.io/apitest/questions.json")
       .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataRecieved", payload: data }))
+      .then((data) =>
+        dispatch({ type: "dataRecieved", payload: data.questions })
+      )
       .catch((err) => dispatch({ type: "dataFailed" }));
   }, []);
   return (
