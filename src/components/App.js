@@ -12,6 +12,7 @@ import Progress from "./Progress";
 import FinishScreen from "./FinishScreen";
 import Timer from "./Timer";
 import Footer from "./Footer";
+const SECS_QUESTION = 30;
 const initialState = {
   questions: [],
   //status; loading, error, ready, active, finished
@@ -20,7 +21,7 @@ const initialState = {
   answer: null,
   points: 0,
   highscore: 0,
-  secondsRemaining: 10,
+  secondsRemaining: null,
 };
 function reducer(state, action) {
   switch (action.type) {
@@ -39,6 +40,7 @@ function reducer(state, action) {
       return {
         ...state,
         status: "active",
+        secondsRemaining: state.questions.length * SECS_QUESTION,
       };
     case "newAnswer":
       //overall question index
