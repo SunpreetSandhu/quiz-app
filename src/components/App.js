@@ -18,6 +18,7 @@ const initialState = {
   index: 0,
   answer: null,
   points: 0,
+  highscore: 0,
 };
 function reducer(state, action) {
   switch (action.type) {
@@ -61,6 +62,8 @@ function reducer(state, action) {
       return {
         ...state,
         status: "finished",
+        highscore:
+          state.points > state.highscore ? state.points : state.highscore,
       };
 
     default:
@@ -70,7 +73,7 @@ function reducer(state, action) {
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const { questions, status, index, answer, points } = state;
+  const { questions, status, index, answer, points, highscore } = state;
 
   const numQuestions = questions.length;
   const maxPossiblePoints = questions.reduce(
@@ -115,7 +118,11 @@ function App() {
           </>
         )}
         {status === "finished" && (
-          <FinishScreen points={points} maxPossiblePoints={maxPossiblePoints} />
+          <FinishScreen
+            points={points}
+            maxPossiblePoints={maxPossiblePoints}
+            highscore={highscore}
+          />
         )}
       </Main>
     </div>
