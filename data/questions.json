@@ -1,139 +1,139 @@
 {
   "questions": [
     {
-      "question": "Which is the most popular JavaScript framework?",
-      "options": ["Angular", "React", "Svelte", "Vue"],
-      "correctOption": 1,
-      "points": 10
-    },
-    {
-      "question": "Which company invented React?",
-      "options": ["Google", "Apple", "Netflix", "Facebook"],
-      "correctOption": 3,
-      "points": 10
-    },
-    {
-      "question": "What's the fundamental building block of React apps?",
-      "options": ["Components", "Blocks", "Elements", "Effects"],
-      "correctOption": 0,
-      "points": 10
-    },
-    {
-      "question": "What's the name of the syntax we use to describe the UI in React components?",
-      "options": ["FBJ", "Babel", "JSX", "ES2015"],
+      "question": "Which team won the NBA championship in the 2023 season?",
+      "options": [
+        "Los Angeles Lakers",
+        "Miami Heat",
+        "Denver Nuggets",
+        "Golden State Warriors"
+      ],
       "correctOption": 2,
       "points": 10
     },
     {
-      "question": "How does data flow naturally in React apps?",
+      "question": "Who is nicknamed 'The King' in the NBA?",
       "options": [
-        "From parents to children",
-        "From children to parents",
-        "Both ways",
-        "The developers decides"
+        "LeBron James",
+        "Kevin Durant",
+        "Kawhi Leonard",
+        "Giannis Antetokounmpo"
       ],
       "correctOption": 0,
       "points": 10
     },
     {
-      "question": "How to pass data into a child component?",
-      "options": ["State", "Props", "PropTypes", "Parameters"],
+      "question": "What is the regulation height of an NBA basketball hoop in feet?",
+      "options": ["9", "10", "11", "12"],
       "correctOption": 1,
       "points": 10
     },
     {
-      "question": "When to use derived state?",
+      "question": "Which NBA player is often referred to as 'The Greek Freak'?",
       "options": [
-        "Whenever the state should not trigger a re-render",
-        "Whenever the state can be synchronized with an effect",
-        "Whenever the state should be accessible to all components",
-        "Whenever the state can be computed from another state variable"
+        "Giannis Antetokounmpo",
+        "Nikola Jokic",
+        "Luka Doncic",
+        "Joel Embiid"
       ],
-      "correctOption": 3,
-      "points": 30
+      "correctOption": 0,
+      "points": 10
     },
     {
-      "question": "What triggers a UI re-render in React?",
+      "question": "Which pair of teams are tied for the record of the most NBA championships?",
       "options": [
-        "Running an effect",
-        "Passing props",
-        "Updating state",
-        "Adding event listeners to DOM elements"
+        "Chicago Bulls / New York Knicks",
+        "Boston Celtics / Los Angeles Lakers",
+        "Golden State Warriors / Miami Heat",
+        "Philadelphia 76ers / Houston Rockets"
       ],
-      "correctOption": 2,
-      "points": 20
-    },
-    {
-      "question": "When do we directly \"touch\" the DOM in React?",
-      "options": [
-        "When we need to listen to an event",
-        "When we need to change the UI",
-        "When we need to add styles",
-        "Almost never"
-      ],
-      "correctOption": 3,
-      "points": 20
-    },
-    {
-      "question": "In what situation do we use a callback to update state?",
-      "options": [
-        "When updating the state will be slow",
-        "When the updated state is very data-intensive",
-        "When the state update should happen faster",
-        "When the new state depends on the previous state"
-      ],
-      "correctOption": 3,
-      "points": 30
-    },
-    {
-      "question": "If we pass a function to useState, when will that function be called?",
-      "options": [
-        "On each re-render",
-        "Each time we update the state",
-        "Only on the initial render",
-        "The first time we update the state"
-      ],
-      "correctOption": 2,
-      "points": 30
-    },
-    {
-      "question": "Which hook to use for an API request on the component's initial render?",
-      "options": ["useState", "useEffect", "useRef", "useReducer"],
       "correctOption": 1,
       "points": 10
     },
     {
-      "question": "Which variables should go into the useEffect dependency array?",
+      "question": "What is the duration of a standard NBA game, excluding overtime?",
+      "options": ["48 minutes", "60 minutes", "90 minutes", "120 minutes"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Who is the NBA's all-time leading scorer?",
       "options": [
-        "Usually none",
-        "All our state variables",
-        "All state and props referenced in the effect",
-        "All variables needed for clean up"
+        "Kareem Abdul-Jabbar",
+        "LeBron James",
+        "Michael Jordan",
+        "Kobe Bryant"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "How many teams are in the NBA as of the 2023-2024 season?",
+      "options": ["26", "28", "30", "32"],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "Who won the NBA MVP award for the 2022-2023 season?",
+      "options": [
+        "Giannis Antetokounmpo",
+        "Nikola Jokic",
+        "Stephen Curry",
+        "Joel Embiid"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "Which NBA player holds the record for the most career assists?",
+      "options": ["John Stockton", "Magic Johnson", "Chris Paul", "Steve Nash"],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "In which year was the NBA founded?",
+      "options": ["1942", "1946", "1950", "1952"],
+      "correctOption": 1,
+      "points": 30
+    },
+    {
+      "question": "Who is the youngest player to score 70 or more points in an NBA game?",
+      "options": [
+        "LeBron James",
+        "Kobe Bryant",
+        "Devin Booker",
+        "Michael Jordan"
       ],
       "correctOption": 2,
       "points": 30
     },
     {
-      "question": "An effect will always run on the initial render.",
+      "question": "How many NBA championships did Michael Jordan win during his career?",
+      "options": ["4", "5", "6", "7"],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Who holds the record for the most NBA Finals MVP awards?",
       "options": [
-        "True",
-        "It depends on the dependency array",
-        "False",
-        "In depends on the code in the effect"
+        "Michael Jordan",
+        "LeBron James",
+        "Kareem Abdul-Jabbar",
+        "Magic Johnson"
       ],
       "correctOption": 0,
       "points": 30
     },
     {
-      "question": "When will an effect run if it doesn't have a dependency array?",
+      "question": "Who was the first player to be drafted straight out of high school into the NBA?",
       "options": [
-        "Only when the component mounts",
-        "Only when the component unmounts",
-        "The first time the component re-renders",
-        "Each time the component is re-rendered"
+        "Kobe Bryant",
+        "Kevin Garnett",
+        "LeBron James",
+        "Tracy McGrady"
       ],
-      "correctOption": 3,
-      "points": 20
+      "correctOption": 1,
+      "points": 30
     }
   ]
 }
