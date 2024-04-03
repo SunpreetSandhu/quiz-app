@@ -75,12 +75,14 @@ function reducer(state, action) {
         index: 0,
         answer: null,
         points: 0,
+        secondsRemaining: 10,
       };
 
     case "tick":
       return {
         ...state,
         secondsRemaining: state.secondsRemaining - 1,
+        status: state.secondsRemaining === 0 ? "finished" : state.status,
       };
 
     default:
