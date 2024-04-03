@@ -3,6 +3,7 @@ import "./index.css";
 import Header from "./Header";
 import Main from "./Main";
 import { useEffect, useReducer } from "react";
+import Loader from "./Loader";
 
 const initialState = {
   questions: [],
@@ -29,6 +30,7 @@ function reducer(state, action) {
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const { questions, status } = state;
   useEffect(function () {
     fetch("http://localhost:9000/questions")
       .then((res) => res.json())
@@ -38,10 +40,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Main>
-        <p>1/15</p>
-        <p>question</p>
-      </Main>
+      <Main>{status === "loading" && <Loader />}</Main>
     </div>
   );
 }
