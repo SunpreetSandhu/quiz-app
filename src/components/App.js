@@ -53,6 +53,7 @@ function reducer(state, action) {
       return {
         ...state,
         index: state.index + 1,
+        answer: null,
       };
     default:
       throw new Error("action unknown");
@@ -86,7 +87,7 @@ function App() {
               dispatch={dispatch}
               answer={answer}
             />
-            <NextButton dispatch={dispatch} />
+            <NextButton dispatch={dispatch} answer={answer} />
           </>
         )}
       </Main>
