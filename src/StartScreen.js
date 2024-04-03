@@ -2,7 +2,7 @@ function StartScreen({ numQuestions, dispatch }) {
   return (
     <div className="start">
       <h2>Welcoome to The React Quiz!</h2>
-      <p>{numQuestions} questions to test your react skills!</p>
+      <h3>{numQuestions} questions to test your react skills!</h3>
       <button
         onClick={() => dispatch({ type: "start" })}
         className="btn btn-ui"
