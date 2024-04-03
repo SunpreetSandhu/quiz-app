@@ -4,6 +4,7 @@ import Header from "./Header";
 import Main from "./Main";
 import { useEffect, useReducer } from "react";
 import Loader from "./Loader";
+import Error from "./Error";
 
 const initialState = {
   questions: [],
@@ -40,7 +41,10 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Main>{status === "loading" && <Loader />}</Main>
+      <Main>
+        {status === "loading" && <Loader />}
+        {status === "error" && <Error />}
+      </Main>
     </div>
   );
 }
